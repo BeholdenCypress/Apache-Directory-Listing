@@ -15,6 +15,21 @@ Just change the `{VIEW}` in `.htaccess` to either `grid` or `table`.
 
 You can add your custom code in the `header.html` and `footer.html`.
 
+# Hiding Files
+When using this theme, you will notice that `grid.css`, `table.css`, and `header.css` are visible in the listing.
+
+If you would like these to disappear, then just add the following to the `.htaccess` file
+
+``` 
+IndexIgnore /{SOME_FOLDER}/footer.html
+IndexIgnore /{SOME_FOLDER}/grid.css
+IndexIgnore /{SOME_FOLDER}/table.css
+```
+ 
+Once this is added, it will hide footer, grid, and table from view in the directory listing
+  
+
+
 ### Grid style:  
 ![grid](https://cloud.githubusercontent.com/assets/12368291/19376773/8444eaa6-91fe-11e6-9a1e-d233553191a6.png)  
 
